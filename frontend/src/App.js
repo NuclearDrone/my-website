@@ -1,18 +1,32 @@
 import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom'
+import { Provider } from 'react-redux'
+
+import store from './stores'
+import Header from './components/shared/Header'
+import Footer from './components/shared/Footer'
+import Frontpage from './components/Frontpage'
+
 
 const App = () => {
-  
   return (
-    <div>
-      <header>
+    <Provider store={store}>
+      <Router>
         <div>
-          <a href="https://euw.op.gg/summoner/userName=NuclearDrone">OP.gg</a>
-          {'\n'}
-          <a href="https://secure.runescape.com/m=hiscore_oldschool_ironman/hiscorepersonal?user1=nucleardrone">OSRS</a>
+          <Header />
+          <Switch>
+            <Route path='/' exact>
+              <Frontpage />
+            </Route>
+          </Switch>
+          <Footer />
         </div>
-      </header>
-      <h2>Hello, this is my website!</h2>
-    </div>
+      </Router>
+    </Provider>
   )
 }
 
