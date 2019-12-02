@@ -20,7 +20,7 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .logo {
   height: 2.8rem;
@@ -82,7 +82,7 @@ a:visited {
 .footer-link {
   padding: 0.5em;
   margin: 0 0.2em;
-  background-color: #171F28;
+  background-color: #2D3640;
 }
 .footer-links {
   width: 30%;

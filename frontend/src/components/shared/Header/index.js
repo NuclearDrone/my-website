@@ -10,8 +10,7 @@ const Header = () => {
       <p className='header-item'>TEST HEADER</p>
       <p className='header-item'>TEST HEADER</p>
     </div>
-  ) 
+  )
 }
-
 
 export default Header
