@@ -22,6 +22,9 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
+.logo {
+  height: 2.8rem;
+}
 .container {
   background-color: #fff;
   
