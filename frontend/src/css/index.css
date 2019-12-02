@@ -20,8 +20,37 @@ body {
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.header-item {
+  margin: 0 1em;
+}
+.headerLogo {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
+.header-items-desktop {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.header-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .header-items-desktop {
+    display: flex;
+  }
+  .header-mobile {
+    display: none;
+  }
+}
+
 .logo {
   height: 2.8rem;
 }
@@ -65,9 +94,6 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.header-item {
-  margin: 0 1em;
 }
 .frontpage {
   display: flex;
