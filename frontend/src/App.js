@@ -9,7 +9,7 @@ import { Provider } from 'react-redux'
 import store from './stores'
 import Header from './components/shared/Header'
 import Footer from './components/shared/Footer'
-import Frontpage from './components/Frontpage'
+import Portfolio from './components/Portfolio'
 
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
           <Header />
           <Switch>
             <Route path='/' exact>
-              <Frontpage />
+              <Portfolio />
             </Route>
           </Switch>
           <Footer />
