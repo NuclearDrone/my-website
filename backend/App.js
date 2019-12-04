@@ -12,4 +12,6 @@ app.use(express.json())
 //Use combined routes
 app.use('/', routes)
 
+app.use(express.static('build'))
+
 module.exports = app
