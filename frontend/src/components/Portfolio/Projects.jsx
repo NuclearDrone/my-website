@@ -1,26 +1,64 @@
 import React from 'react'
+const TDGif = require('../../images/TD.gif')
+const UGGGif = require('../../images/UGG.gif')
 
 const Projects = () => {
   return (
     <div className="portfolio-item">
       <h1 className="title">PROJECTS</h1>
-      <p className="about-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra orci sed augue efficitur tincidunt. Fusce eget imperdiet erat, a volutpat magna. Maecenas in tincidunt elit, quis gravida lorem. Sed quis massa id eros pretium hendrerit. Maecenas ipsum lacus, imperdiet quis iaculis lobortis, mattis euismod eros. Nam a dui mauris. Suspendisse sit amet aliquam felis, eu euismod nulla. Curabitur congue fringilla elit, id imperdiet sapien euismod in. In sed porttitor mi, sed blandit risus.
-
-Quisque vestibulum magna sed quam congue consequat. Donec vestibulum purus in cursus maximus. Cras nibh libero, facilisis vitae lobortis at, vestibulum a enim. Integer eget neque porta, condimentum felis sit amet, maximus massa. Duis pharetra ligula ligula, at dapibus lectus tempor sed. Sed neque elit, faucibus ac nisi quis, ornare dictum risus. Curabitur semper metus nec est viverra interdum. Duis dapibus nibh quam, quis iaculis sapien congue sit amet. Aliquam erat volutpat. Proin ante urna, mollis vitae tincidunt nec, faucibus eget lacus. Sed justo mi, laoreet sed tellus sit amet, finibus dapibus quam. Vivamus mauris nulla, vehicula dictum purus eu, consequat sodales velit. Sed sem nunc, aliquet quis posuere at, volutpat quis dui.
-
-Aliquam sed semper magna. Nulla commodo diam nibh, quis malesuada ipsum feugiat in. Fusce id eleifend velit. Duis volutpat elit id sem posuere viverra eu sit amet leo. In lectus est, mollis at dolor sed, viverra viverra nibh. Ut hendrerit pharetra egestas. Aliquam dictum lorem elit, in tincidunt ligula cursus ut. Donec ac sodales augue. Donec nec accumsan augue. Nunc ligula tortor, imperdiet eget tortor sit amet, gravida posuere nulla.
-
-Integer odio sapien, dignissim ut lacinia sed, imperdiet non felis. Integer ligula mi, dapibus a augue in, convallis tempor lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec commodo ligula dui, a vehicula massa aliquet vitae. Nunc vel bibendum arcu, sit amet placerat dolor. Nunc ut lectus ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus tristique, elit et varius rhoncus, nunc ligula condimentum neque, convallis faucibus arcu eros ut eros. Donec sed nunc lacinia, pretium libero sed, iaculis orci.
-
-Sed ullamcorper placerat ligula nec molestie. Aenean mollis sit amet diam in scelerisque. Quisque congue sapien est, eu pharetra velit tempus id. Vivamus aliquam libero lacus, vitae convallis enim sollicitudin ac. Phasellus eu ligula leo. Proin ut eros non arcu tempus lacinia at eget sem. Suspendisse a sodales nunc. Quisque id turpis felis. Nulla elementum imperdiet mauris at porttitor. Nulla fermentum odio a quam venenatis dignissim. Curabitur eget nisl vel leo maximus gravida. Aliquam at euismod nisi, id mattis tortor.
-
-Duis bibendum mattis rutrum. Aenean ullamcorper dignissim risus, at placerat leo maximus eget. Maecenas eget est sit amet erat rhoncus cursus. Phasellus malesuada nulla a leo porttitor, eget ultrices nibh ultricies. Fusce venenatis lorem at tristique cursus. Maecenas ultricies augue mauris, sed ornare dolor tincidunt consectetur. Curabitur scelerisque velit finibus sapien aliquam, vel dictum velit dapibus. Etiam in sapien vitae tortor lobortis maximus finibus eget arcu. Aliquam vehicula risus vitae lacus ultrices, a faucibus ante imperdiet. Praesent et vehicula risus. Sed convallis posuere augue, id faucibus eros ullamcorper non. In condimentum congue massa ut ultricies. Pellentesque finibus ipsum odio, eu dictum diam cursus sit amet. Etiam convallis porttitor quam vitae gravida. Vivamus ultrices semper lectus, sed pretium diam blandit ac. Donec dignissim felis in consequat sollicitudin.
-
-Vivamus a sapien sem. Phasellus id eleifend eros, at condimentum neque. Etiam sit amet ex non mauris lobortis varius. Aliquam a vehicula velit. Praesent feugiat odio eros. In ut venenatis risus, a pellentesque turpis. Vestibulum nisi nunc, facilisis non viverra quis, suscipit id est. Maecenas in metus justo. Curabitur vel dignissim arcu, eget luctus justo. Fusce id lorem lorem. Maecenas nisi nulla, porta non dolor eget, tempor fermentum ipsum. In hac habitasse platea dictumst.
-
-Phasellus quis fermentum nibh. Sed hendrerit orci lorem, nec venenatis tellus semper eu. Pellentesque mi elit, tristique eu enim eu, rhoncus semper nulla. Vestibulum quis turpis dictum, molestie metus ac, eleifend metus. Maecenas nec urna nec diam sollicitudin pretium. Cras ultricies efficitur sapien ut laoreet. Donec ut aliquet magna. Aenean non tempus elit. Suspendisse bibendum felis vel augue tempus tincidunt. Vivamus non luctus erat, eget pellentesque arcu. Pellentesque in risus pharetra, lobortis odio id, sagittis magna. Aliquam eros arcu, faucibus a volutpat nec, hendrerit at quam. Fusce pharetra id neque eget vestibulum. Integer malesuada lectus egestas lorem euismod, euismod vestibulum arcu venenatis.
-
-Proin velit massa, rhoncus at orci vitae, euismod varius augue. Aliquam tristique elementum justo. Donec placerat pharetra dolor vel varius. Fusce sapien justo, commodo nec odio eu, congue facilisis elit. Duis et velit turpis. Morbi consequat mi condimentum ligula mattis, sit amet ultricies nulla dictum. Etiam scelerisque a odio nec ultricies. Integer aliquam, purus ac suscipit bibendum, nunc neque iaculis sem, ut varius eros enim nec lorem. Cras dictum eu ligula ac ultricies. Nam vulputate tristique felis, eu accumsan justo scelerisque a. Nullam facilisis, magna quis porttitor elementum, ex justo varius nisl, et ultrices lacus augue ut dui. Vestibulum sed ultrices leo. Aliquam erat volutpat. Curabitur sodales ullamcorper scelerisque. </p>
+      <div className='projects'>
+        {/* Tower Defense */}
+        <div>
+          <div className="project-item-text">
+            <h2 align='center'>Tower Defense</h2>
+            <p className="portfolio-text">
+              A simple tower defense game. There are endless amounts of waves and
+              the enemies keep getting more difficult.
+              <br/><br/>
+              The game is created using Scala and object-oriented programming.
+              It uses ScalaFX library for the 2D graphics UI and has functionality to save
+              and load progress from a file.
+              <br/><br/>
+              This was my first programming project completely done from scratch.
+              If I would start the project all over again, I would make sure the game
+              can be packaged to a usable form outside of the IDE.
+            </p>
+          </div>
+          <div className="project-item-media">
+            <a href="https://i.imgur.com/r7446N5.gifv"><img id="gif" src={ TDGif } alt="https://i.imgur.com/r7446N5.gifv"/></a>
+            <span className='about-span'>Scala</span>
+          </div>
+        </div>
+        {/* Discord bot */}
+        <div>
+          <div className="project-item-text">
+            <h2 align='center'>Discord U.GG Bot</h2>
+            <p className="portfolio-text">
+              A bot account in Discord, which runs on Node.js. It uses Discord.js and Discord API to
+              connect the bot to a users Discord server and listen for commands in all chat
+              channels. When called, the bot links the user a website according to their
+              given parameters.
+              <br/><br/>
+              The bot was a quick and easy project I did to help my friends and I
+              when playing League of Legends. Learning JavaScript during the project
+              helped me out a lot when I started programming web applications.
+              <br/><br/>
+              The bot is very simple and can only be used with correct syntax. To expand
+              the bot I would add spelling error checking and add the possibility to 
+              do multiple different searches at once.
+            </p>
+          </div>
+          <div className="project-item-media">
+            <a href="https://i.imgur.com/z58roy9.gifv"><img id="gif" src={ UGGGif } alt="https://i.imgur.com/z58roy9.gifv"/></a>
+            <div>
+              <span className='about-span'>JavaScript</span>
+              <span className='about-span'>Node.js</span>
+              <span className='about-span'>Discord.js</span>
+            </div>
+          </div>
+        </div>
+        {/*  */}
+      </div>
     </div>    
   )
 }

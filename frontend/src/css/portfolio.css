@@ -1,0 +1,140 @@
+
+/* Allow for customization of different portfolio items */
+.portfolio-item {
+  max-width: 100vw;
+  color: #333;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-text {
+  margin: 0 2em 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+.align-portfolio {
+  max-width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title {
+  background: rgb(27,36,47);
+  background: radial-gradient(circle, rgba(27,36,47,1) 0%, rgba(67,79,93,1) 67%, rgba(255,255,255,1) 100%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.languages-frameworks {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.languages-frameworks>div {
+  border: 2px solid #717171;
+  border-radius: 4px;
+  padding: 0.2em;
+  margin: 0.5em;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.languages-frameworks>div>div {
+  max-width: 400px;
+}
+.languages-frameworks div>h6 {
+  border-bottom: 2px solid #717171;
+  margin: 0 0 0.4em 0;
+  padding-bottom: 0.2em;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+}
+.about-span {
+  display: inline-block;
+  margin: 0.2em;
+  padding: 0.2em;
+  border: 2px solid #cacaca;
+  border-radius: 4px;
+  background-color: #cacaca;
+}
+.about-span:hover {
+  background-color: #ddd;
+  border-color: #ddd;
+}
+
+.projects {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+}
+.projects>div {
+  border-bottom: 1px solid #717171;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.projects>div div {
+  margin: 1em;
+}
+#gif {
+  max-width: 90vw;
+  border: 1px solid #717171;
+}
+.project-item-media {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.project-item-media>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (min-width: 1400px) {
+  .projects>div {
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 600px) {
+  .align-portfolio {
+    width: 90vw;
+    max-width: 1000px;
+  }
+  .portfolio-item {
+    max-width: 70vw;
+  }
+  #gif {
+    max-width: 500px;
+    border: 1px solid #717171;
+  }
+}

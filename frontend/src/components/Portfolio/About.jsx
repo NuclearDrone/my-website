@@ -4,7 +4,40 @@ const About = () => {
   return (
     <div className='portfolio-item'>
       <h1 className='title'>ABOUT</h1>
-      <p className='about-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non accumsan leo. Phasellus metus tortor, facilisis ut ex sit amet, elementum tempus quam. Proin vestibulum non lorem ut posuere. Cras nulla urna, tempor eu iaculis nec, pulvinar ac tellus. Nam vitae malesuada eros. Vivamus semper mollis urna, quis porta tortor fringilla ac. Ut egestas vehicula lectus, vitae lobortis turpis congue sed. Quisque tempus aliquam libero vitae euismod. Praesent sit amet metus nisi. Donec id lacinia ipsum, in pharetra ante. Cras in lacus libero. </p>
+      <p className='portfolio-text'>
+      I'm an aspiring software engineer currently studying Computer Science at Aalto
+      University. I have created full-stack web applications, like this website,
+      games and quality of life projects for my friends and I. I am eager to learn
+      new technologies and frameworks in the future, most interested in full-stack
+      web development and cloud applications.
+      </p>
+      <div className="languages-frameworks">
+        <div>
+          <h6>Languages</h6>
+          <div>
+            <span className='about-span'>JavaScript</span>
+            <span className='about-span'>Scala</span>
+            <span className='about-span'>HTML</span>
+            <span className='about-span'>CSS</span>
+            <span className='about-span'>SQL</span>
+            <span className='about-span'>C#</span>
+            <span className='about-span'>C</span>
+          </div>
+        </div>
+        <div>
+          <h6>Frameworks and libraries</h6>
+          <div>
+            <span className='about-span'>Node.js</span>
+            <span className='about-span'>React.js</span>
+            <span className='about-span'>Redux</span>
+            <span className='about-span'>PostgreSQL</span>
+            <span className='about-span'>MongoDB</span>
+            <span className='about-span'>Socket.io</span>
+            <span className='about-span'>Discord.js</span>
+            <span className='about-span'>Unity</span>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
