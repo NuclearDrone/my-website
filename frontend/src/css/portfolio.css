@@ -120,6 +120,55 @@
   justify-content: center;
   flex-direction: row;
 }
+.contact {
+  width:90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact>div {
+  border: 2px solid #717171;
+  border-radius: 2px;
+  padding: 0.4em;
+  margin-bottom: 1em;
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact>div>input {
+  width:20vw;
+  min-width: 300px;
+  margin: 0.3em 0;
+  font-family: inherit;
+  font-size: 1em;
+}
+.contact>div>textarea {
+  width:20vw;
+  min-width: 300px;
+  min-height: 200px;
+  margin: 0.3em 0;
+  font-family: inherit;
+  font-size: 1em;
+}
+.contact>div>span {
+  width:10vw;
+  min-width: 300px;
+}
+.contact>div>button {
+  display: block;
+  border: 1px solid #717171;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #1B242F;
+  color: #fff;
+  font-size: 1em;
+}
+.contact>span {
+  margin-bottom: 1em;
+}
 @media (min-width: 1400px) {
   .projects>div {
     flex-wrap: nowrap;

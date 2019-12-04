@@ -33,4 +33,7 @@ a #hide {
   position: absolute;
   overflow: hidden;
   top: -10px;
- }
+}
+.error {
+  color: red;
+}
