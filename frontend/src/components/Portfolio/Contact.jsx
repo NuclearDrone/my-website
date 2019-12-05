@@ -1,4 +1,4 @@
-import React /*, { useState }*/ from 'react'
+import React /*, { useState } */ from 'react'
 // import contact from '../../services/contact'
 
 const Contact = () => {
@@ -30,7 +30,7 @@ const Contact = () => {
   //       isSubmitting: false,
   //       isError: false
   //     }
-  //     await contact(info.values) 
+  //     await contact(info.values)
   //   } catch(e) {
   //     console.log(e)
   //     setError(e.message)
@@ -40,11 +40,12 @@ const Contact = () => {
   //   }
   // }
   return (
-    <div className="portfolio-item">
-      <h1 className="title">CONTACT</h1>
-      <div className="contact">
-
-        <span>Contact me at <a href="mailto:contact@mickeenberg.com">contact@mickeenberg.com</a></span>
+    <div className='portfolio-item'>
+      <h1 className='title'>CONTACT</h1>
+      <div className='contact'>
+        <div>
+          <span>Contact me at <a href='mailto:contact@mickeenberg.com'>contact@mickeenberg.com</a></span>
+        </div>
         {/* <div>
           <span>Name: </span>
           <input type="text" name='name' value={state.name} onChange={handleChange}/>
@@ -60,7 +61,7 @@ const Contact = () => {
           <button onClick={handleSubmit}>Submit</button>
         </div> */}
       </div>
-    </div> 
+    </div>
   )
 }
 

@@ -33,6 +33,7 @@
   background: rgb(27,36,47);
   background: radial-gradient(circle, rgba(27,36,47,1) 0%, rgba(67,79,93,1) 67%, rgba(255,255,255,1) 100%);
   width: 100%;
+  max-width: 1000px;
   text-align: center;
   color: #fff;
 }
@@ -120,8 +121,9 @@
   justify-content: center;
   flex-direction: row;
 }
+/* Fix contact title or add contect to fix it. */
 .contact {
-  width:90vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
