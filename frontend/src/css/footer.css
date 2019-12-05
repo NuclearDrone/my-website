@@ -19,7 +19,16 @@
 }
 
 .footer-link {
-  margin: 0 0.2em;
+  display: inline-flex;
+  background-color: #272F39;
+  padding: 0.2em;
+  border-radius: 4px;
+}
+.footer-link>img {
+  margin: 0;
+}
+.footer-link-a {
+  margin: 0.2em;
 }
 .footer-links {
   width: 30%;
