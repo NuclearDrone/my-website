@@ -1,11 +1,12 @@
-const sendMail = require('../services/nodemailer')
+const {sendMail} = require('../services/nodemailer')
 
 const sendEmail = async (info) => {
   const options = {
-    from: process.env.EMAILUSER,
+    from: `${info.name} <${info.email}>`,
     to: 'contact@mickeenberg.com',
-    subject: info.title,
-    text: `Contact name: ${info.name} Contact email: ${info.email} Contact message: ${info.message}`
+    subject: info.topic,
+    replyTo: info.email,
+    text: info.message
   }
   const res = await sendMail(options)
   return res

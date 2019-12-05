@@ -1,22 +1,24 @@
 const nodemailer = require('nodemailer')
+require('dotenv').config()
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
+    type: 'OAuth2',
     user: process.env.EMAILUSER,
-    pass: process.env.EMAILPASS
+    clientId: process.env.CLIENTID,
+    clientSecret: process.env.CLIENTSECRET,
+    refreshToken: process.env.REFRESHTOKEN,
+    accessToken: process.env.ACCESSTOKEN
+  },
+  tls: {
+    rejectUnauthorized: false
   }
 })
 
-const sendMail = (options) => {
-  let data = {}
-  transporter.sendMail(options, (error, info) => {
-    data = {
-      error: error,
-      info: info
-    }
-  })
-  return data
+const sendMail = async (options) => {
+  const res = await transporter.sendMail(options)
+  return res
 }
 
 module.exports = {

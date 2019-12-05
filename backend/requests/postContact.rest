@@ -1,9 +1,9 @@
-POST http://localhost:3001/
+POST http://localhost:3001/api/portfolio
 Content-Type: application/json
 
 {
-  "name":"123",
-  "email":"123",
-  "topic":"123",
-  "message":"123"
+  "name":"Micke",
+  "email":"nucleardrone@gmail.com",
+  "topic":"My topic",
+  "message":"This is my message123"
 }

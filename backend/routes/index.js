@@ -3,6 +3,6 @@ const router = express.Router()
 const portfolioRoutes = require('./portfolio')
 
 // Combines all routes
-router.use('/api/portfolio', portfolioRoutes)
+router.use('/', portfolioRoutes)
 
 module.exports = router
