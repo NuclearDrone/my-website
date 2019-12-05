@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0fe2460.chunk.css",
+    "main.css": "/static/css/main.8197f0f4.chunk.css",
     "main.js": "/static/js/main.eebca376.chunk.js",
     "main.js.map": "/static/js/main.eebca376.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.baeb1881.js",
@@ -8,9 +8,9 @@
     "static/js/2.2b5714e0.chunk.js": "/static/js/2.2b5714e0.chunk.js",
     "static/js/2.2b5714e0.chunk.js.map": "/static/js/2.2b5714e0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fd53648059b72979a760b589d0b7dd6a.js": "/precache-manifest.fd53648059b72979a760b589d0b7dd6a.js",
+    "precache-manifest.cbcb2768f0b80768ae6b6f932051f0e7.js": "/precache-manifest.cbcb2768f0b80768ae6b6f932051f0e7.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a0fe2460.chunk.css.map": "/static/css/main.a0fe2460.chunk.css.map",
+    "static/css/main.8197f0f4.chunk.css.map": "/static/css/main.8197f0f4.chunk.css.map",
     "static/media/TD.gif": "/static/media/TD.5c0b295f.gif",
     "static/media/UGG.gif": "/static/media/UGG.47e1f60c.gif",
     "static/media/github.svg": "/static/media/github.5762a8ff.svg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.baeb1881.js",
     "static/js/2.2b5714e0.chunk.js",
-    "static/css/main.a0fe2460.chunk.css",
+    "static/css/main.8197f0f4.chunk.css",
     "static/js/main.eebca376.chunk.js"
   ]
 }

@@ -156,7 +156,7 @@
   font-size: 1em;
 }
 .contact>div>span {
-  width:10vw;
+  width:100%;
   min-width: 300px;
 }
 .contact>div>button {
