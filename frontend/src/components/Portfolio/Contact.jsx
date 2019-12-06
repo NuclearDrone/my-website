@@ -55,10 +55,10 @@ const Contact = () => {
           <span>Message: </span>
           <textarea type='text' name='message' value={state.message} onChange={handleChange} />
           {error && (
-            <span className='error'>{error}</span>
+            <span className='notification' id='error'>{error}</span>
           )}
           {success && (
-            <span className='success'>{success}</span>
+            <span className='notification' id='success'>{success}</span>
           )}
           <button onClick={handleSubmit}>Submit</button>
         </div>

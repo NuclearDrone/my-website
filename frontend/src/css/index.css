@@ -34,9 +34,9 @@ a #hide {
   overflow: hidden;
   top: -10px;
 }
-.error {
+#error {
   color: red;
 }
-.success {
+#success {
   color: green;
 }

@@ -151,13 +151,13 @@
   width:20vw;
   min-width: 300px;
   min-height: 200px;
+  resize: vertical;
   margin: 0.3em 0;
   font-family: inherit;
   font-size: 1em;
 }
 .contact>div>span {
-  width:100%;
-  min-width: 300px;
+  width: 300px;
 }
 .contact>div>button {
   display: block;
@@ -171,6 +171,13 @@
 .contact>span {
   margin-bottom: 1em;
 }
+.notification {
+  background-color: #eee;
+  padding: 0.2em;
+  margin: 0.4em 0;
+  border-radius: 4px;
+}
+
 @media (min-width: 1400px) {
   .projects>div {
     flex-wrap: nowrap;
