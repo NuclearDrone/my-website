@@ -37,3 +37,6 @@ a #hide {
 .error {
   color: red;
 }
+.success {
+  color: green;
+}

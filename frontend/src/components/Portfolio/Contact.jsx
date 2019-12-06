@@ -1,4 +1,4 @@
-import React , { useState } from 'react'
+import React, { useState } from 'react'
 import contact from '../../services/contact'
 
 const Contact = () => {
@@ -10,31 +10,35 @@ const Contact = () => {
   }
   const [state, setState] = useState(initState)
   const [error, setError] = useState('')
+  const [success, setSuccess] = useState('')
   const handleChange = (event) => {
     setState({
       ...state,
       [event.target.name]: event.target.value
     })
-
   }
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
-      if(Object.values(state).some(x => x === '')) {
+      if (Object.values(state).some(x => x === '')) {
         throw new Error('All fields are required.')
       }
       const res = await contact(state)
-      if(res.accepted !== undefined) {
+      if (res.accepted !== undefined) {
         setState(initState)
+        setSuccess('Thank you for your message! Expect a reply in a few days.')
+        setTimeout(() => {
+          setSuccess('')
+        }, 5000)
       } else {
         throw res
       }
-    } catch(e) {
+    } catch (e) {
       console.log(e)
       setError(e.message)
       setTimeout(() => {
         setError('')
-      }, 5000);
+      }, 5000)
     }
   }
   return (
@@ -43,15 +47,18 @@ const Contact = () => {
       <div className='contact'>
         <div>
           <span>Name: </span>
-          <input type="text" name='name' value={state.name} onChange={handleChange}/>
+          <input type='text' name='name' value={state.name} onChange={handleChange} />
           <span>Email: </span>
-          <input type="text" name='email' value={state.email} onChange={handleChange}/>
+          <input type='text' name='email' value={state.email} onChange={handleChange} />
           <span>Topic: </span>
-          <input type="text" name='topic' value={state.topic} onChange={handleChange}/>
+          <input type='text' name='topic' value={state.topic} onChange={handleChange} />
           <span>Message: </span>
-          <textarea type="text" name='message' value={state.message} onChange={handleChange}/>
+          <textarea type='text' name='message' value={state.message} onChange={handleChange} />
           {error && (
             <span className='error'>{error}</span>
+          )}
+          {success && (
+            <span className='success'>{success}</span>
           )}
           <button onClick={handleSubmit}>Submit</button>
         </div>
