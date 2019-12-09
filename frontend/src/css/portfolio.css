@@ -157,7 +157,8 @@
   font-size: 1em;
 }
 .contact>div>span {
-  width: 300px;
+  width: 100%;
+  
 }
 .contact>div>button {
   display: block;
