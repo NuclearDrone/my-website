@@ -11,7 +11,7 @@ const About = () => {
       new technologies and frameworks in the future, most interested in full-stack
       web development and cloud applications.
       </p>
-      <div className="languages-frameworks">
+      <div className='languages-frameworks'>
         <div>
           <h6>Languages</h6>
           <div>
@@ -32,8 +32,7 @@ const About = () => {
             <span className='about-span'>Redux</span>
             <span className='about-span'>PostgreSQL</span>
             <span className='about-span'>MongoDB</span>
-            <span className='about-span'>Socket.io</span>
-            <span className='about-span'>Discord.js</span>
+            {/* <span className='about-span'>Socket.io</span> */}
             <span className='about-span'>Unity</span>
           </div>
         </div>
