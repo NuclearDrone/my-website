@@ -7,7 +7,7 @@ My website project for learning full stack web development.
 - [Redux](https://redux.js.org/)
 - [Node](https://nodejs.org/en/)
 ## Requirements
-    [Node (Version 12.13+)](https://nodejs.org/en/)
+    Node (Version 12.13+)(https://nodejs.org/en/)
 ## Installation (in case the website isn't up)
 1. Install Node
 
