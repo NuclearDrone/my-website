@@ -1,11 +1,22 @@
 import React from 'react'
+import { connect } from 'react-redux'
+
 const TDGif = require('../../images/TD.gif')
 const UGGGif = require('../../images/UGG.gif')
 const github = require('../../images/github.svg')
 const SBGif = require('../../images/SB.gif')
 
-const Projects = () => {
+// CREATE TABLE projects (
+//   id SERIAL PRIMARY KEY,
+//   name TEXT NOT NULL,
+//   paragraphs TEXT[],
+//   links TEXT[],
+//   techs TEXT[]
+// );
+
+const Projects = (props) => {
   // TODO: Refactor into components
+
   return (
     <div className='portfolio-item'>
       <h1 className='title'>PROJECTS</h1>
@@ -104,4 +115,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default connect((state) => ({ projects: state.projects }))(Projects)

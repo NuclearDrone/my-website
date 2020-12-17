@@ -45,7 +45,7 @@ const Contact = () => {
     <div className='portfolio-item'>
       <h1 className='title'>CONTACT</h1>
       <div className='contact'>
-        <div>
+        {/* <div>
           <span>Name: </span>
           <input type='text' name='name' value={state.name} onChange={handleChange} />
           <span>Email: </span>
@@ -61,7 +61,8 @@ const Contact = () => {
             <span className='notification' id='success'>{success}</span>
           )}
           <button onClick={handleSubmit}>Submit</button>
-        </div>
+        </div> */}
+        <span>By email: contact@mickeenberg.com</span>
       </div>
     </div>
   )

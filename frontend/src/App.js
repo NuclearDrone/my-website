@@ -1,33 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom'
-import { Provider } from 'react-redux'
+import { connect } from 'react-redux'
+import { initializeProjects } from './reducers/projectReducer'
 
-import store from './stores'
 import Header from './components/shared/Header'
 import Footer from './components/shared/Footer'
 import Portfolio from './components/Portfolio'
 
-
-const App = () => {
+const App = (props) => {
+  useEffect(() => {
+    props.initializeProjects()
+  })
   return (
-    <Provider store={store}>
-      <Router>
-        <div>
-          <Header />
-          <Switch>
-            <Route path='/' exact>
-              <Portfolio />
-            </Route>
-          </Switch>
-          <Footer />
-        </div>
-      </Router>
-    </Provider>
+    <Router>
+      <div>
+        <Header />
+        <Switch>
+          <Route path='/' exact>
+            <Portfolio />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 
-export default App
+export default connect(null, { initializeProjects })(App)

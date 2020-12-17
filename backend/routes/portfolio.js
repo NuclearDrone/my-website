@@ -15,6 +15,16 @@ router.post('/api/portfolio', async (req, res) => {
     console.log(e)
   }
 })
+router.get('/api/projects', async (req, res) => {
+  try {
+    const resData = await PortfolioController.getProjects()
+    if (resData) {
+      res.status(200).send(resData)
+    }
+  } catch (e) {
+    console.error(e)
+  }
+})
 router.post('/', (req, res) => {
   res.send('test')
 })

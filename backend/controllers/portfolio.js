@@ -1,5 +1,5 @@
-const {sendMail} = require('../services/nodemailer')
-
+const { getAllProjects } = require('../services/projects')
+const { sendMail } = require('../services/nodemailer')
 const sendEmail = async (info) => {
   const options = {
     from: `${info.name} <${info.email}>`,
@@ -9,9 +9,15 @@ const sendEmail = async (info) => {
     text: info.message
   }
   const res = await sendMail(options)
+  console.log(res)
   return res
 }
 
+const getProjects = async () => {
+  getAllProjects()
+}
+
 module.exports = {
-  sendEmail
+  sendEmail,
+  getProjects
 }
