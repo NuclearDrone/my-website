@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-const TDGif = require('../../images/TD.gif')
+import ProjectItem from './ProjectItem'
+
 const UGGGif = require('../../images/UGG.gif')
 const github = require('../../images/github.svg')
 const SBGif = require('../../images/SB.gif')
@@ -22,7 +23,12 @@ const Projects = (props) => {
       <h1 className='title'>PROJECTS</h1>
       <div className='projects'>
         {/* Stickman Battle  */}
-        <div>
+        {props.projects.length > 0
+          ? props.projects.map((project) => (
+            <ProjectItem project={project} key={project.id} />
+          ))
+          : <p>loading projects</p>}
+        {/* <div>
           <div className='project-item-text'>
             <h2 align='center'>Stickman Battle</h2>
             <p className='portfolio-text'>
@@ -51,35 +57,8 @@ const Projects = (props) => {
             </div>
           </div>
         </div>
-        {/* Tower Defense */}
-        <div>
-          <div className='project-item-text'>
-            <h2 align='center'>Tower Defense</h2>
-            <p className='portfolio-text'>
-              A simple tower defense game. There are endless amounts of waves and
-              the enemies keep getting more difficult.
-              <br /><br />
-              The game is created using Scala and object-oriented programming.
-              It uses ScalaFX library for the 2D graphics UI and has functionality to save
-              and load progress from a file.
-              <br /><br />
-              This was my first programming project completely done from scratch.
-              If I would start the project all over again, I would make sure the game
-              can be packaged to a usable form outside of the IDE.
-
-            </p>
-
-            <a href='https://github.com/NuclearDrone/Tower-Defense'>
-              <img src={github} alt='Github' className='logo' />
-            </a>
-          </div>
-          <div className='project-item-media'>
-            <a href='https://i.imgur.com/r7446N5.gifv'><img id='gif' src={TDGif} alt='https://i.imgur.com/r7446N5.gifv' /></a>
-            <span className='about-span'>Scala</span>
-          </div>
-        </div>
         {/* Discord bot */}
-        <div>
+        {/* <div>
           <div className='project-item-text'>
             <h2 align='center'>Discord U.GG Bot</h2>
             <p className='portfolio-text'>
@@ -108,8 +87,7 @@ const Projects = (props) => {
               <span className='about-span'>Discord.js</span>
             </div>
           </div>
-        </div>
-        {/*  */}
+        </div> */}
       </div>
     </div>
   )

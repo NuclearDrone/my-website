@@ -19,6 +19,7 @@ router.get('/api/projects', async (req, res) => {
   try {
     const resData = await PortfolioController.getProjects()
     if (resData) {
+      console.log(resData)
       res.status(200).send(resData)
     }
   } catch (e) {

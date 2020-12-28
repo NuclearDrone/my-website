@@ -14,7 +14,7 @@ const sendEmail = async (info) => {
 }
 
 const getProjects = async () => {
-  getAllProjects()
+  return await getAllProjects()
 }
 
 module.exports = {
