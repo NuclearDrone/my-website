@@ -9,12 +9,12 @@
     "express": "^4.17.1",
     "node-fetch": "^2.6.7",
     "nodemailer": "^6.4.17",
-    "npm": "^8.6.0",
+    "npm": "^8.19.3",
     "pg": "^8.5.1",
     "socket.io": "^4.4.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6",
+    "nodemon": "^2.0.20",
     "standard": "^14.3.4"
   },
   "scripts": {
