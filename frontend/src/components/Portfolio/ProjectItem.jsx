@@ -36,7 +36,7 @@ const ProjectItem = (props) => {
               ))}
             </p>
             <a href={props.project.links[0]}>
-              <img src={github} alt='Github' className='logo' />
+              <img src={github}.default alt='Github' className='logo' />
             </a>
           </div>
           <div className='project-item-media'>
