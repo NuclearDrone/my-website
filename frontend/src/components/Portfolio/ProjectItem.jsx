@@ -5,6 +5,7 @@ const towerDefense = require('../../images/TD.gif')
 const stickmanBattle = require('../../images/SB.gif')
 const fiskars = require('../../images/fiskars.jpg')
 const myWebsite = require('../../images/myWebsite.PNG')
+const espoo = require('../../images/espoo.jpg')
 
 const ProjectItem = (props) => {
   const image = (name) => {
@@ -17,6 +18,8 @@ const ProjectItem = (props) => {
         return stickmanBattle
       case 'My Website':
         return myWebsite
+      case 'Espoo HobbyPath':
+        return espoo
       default:
     }
   }
