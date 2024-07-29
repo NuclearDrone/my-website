@@ -12,7 +12,7 @@
   "author": "Micke Enberg",
   "license": "MIT",
   "dependencies": {
-    "npm": "^8.19.3"
+    "npm": "^10.8.2"
   },
   "devDependencies": {
     "concurrently": "^5.3.0"
